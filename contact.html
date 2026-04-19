@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Texas Superior Roofing</title>
+  <meta
+    name="description"
+    content="Call Texas Superior Roofing in Arlington or use the production-ready request form once the final contact endpoint is configured."
+  />
+  <meta name="theme-color" content="#12202f" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Contact Texas Superior Roofing" />
+  <meta
+    property="og:description"
+    content="Reach Texas Superior Roofing for residential roofing, storm response, commercial support, and metal detail work."
+  />
+  <meta property="og:image" content="/images/projects/yard-sign-dfw-lg.jpg" />
+  <meta property="og:url" content="https://superior-roofing.invalid/contact.html" id="og-url" />
+  <link rel="canonical" href="https://superior-roofing.invalid/contact.html" id="canonical-link" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body data-page="contact" data-path="/contact.html" data-schema="business">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header>
+    <div class="topline">
+      <div class="container topline__inner">
+        <p>Production-ready contact flow with truthful fallback behavior</p>
+        <a class="topline__phone" data-bind-href="phoneHref" data-bind="phoneDisplay" href="tel:+12142324450"></a>
+      </div>
+    </div>
+    <div class="nav-shell">
+      <div class="container nav-bar">
+        <a class="brand" href="/index.html">
+          <span class="brand__mark">TS</span>
+          <span class="brand__text">
+            <span class="brand__eyebrow">Arlington • DFW</span>
+            <span class="brand__name">Texas Superior Roofing</span>
+          </span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-nav-toggle>Menu</button>
+        <nav class="nav-menu" id="primary-nav" aria-label="Primary" data-nav-menu>
+          <a href="/index.html" data-page-link="home">Home</a>
+          <a href="/services.html" data-page-link="services">Services</a>
+          <a href="/gallery.html" data-page-link="gallery">Gallery</a>
+          <a href="/about.html" data-page-link="about">About</a>
+          <a href="/contact.html" data-page-link="contact">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero">
+      <div class="container page-hero__wrap">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h1>Call first, or send a request when the endpoint is live.</h1>
+          <p>
+            The form on this page is ready for production wiring. If the live submission endpoint has not been configured yet, the site tells the truth and
+            sends visitors to the phone number instead of faking a successful submission.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container contact-layout">
+        <aside class="contact-card">
+          <h2>Contact details</h2>
+          <div class="contact-list">
+            <div>
+              <strong>Phone</strong>
+              <a data-bind-href="phoneHref" data-bind="phoneDisplay" href="tel:+12142324450"></a>
+            </div>
+            <div>
+              <strong>Primary market</strong>
+              <span data-bind="localMarket"></span>
+            </div>
+            <div>
+              <strong>Base locality</strong>
+              <span><span data-bind="locality"></span>, <span data-bind="region"></span> <span data-bind="postalCode"></span></span>
+            </div>
+            <div>
+              <strong>Public business profile</strong>
+              <a data-bind-href="bbbUrl" href="https://www.bbb.org/" rel="noreferrer" target="_blank">BBB listing</a>
+            </div>
+          </div>
+        </aside>
+
+        <section class="contact-card">
+          <h2>Request an inspection</h2>
+          <form class="contact-form" data-contact-form novalidate>
+            <p class="form-note" data-form-fallback hidden>
+              Online submission will be enabled after the final endpoint is configured. Until then, call
+              <a data-bind-href="phoneHref" data-bind="phoneDisplay" href="tel:+12142324450"></a>.
+            </p>
+
+            <div class="field-grid">
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" required autocomplete="name" />
+              </div>
+              <div class="field">
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" type="tel" required autocomplete="tel" />
+              </div>
+              <div class="field">
+                <label for="city">City</label>
+                <input id="city" name="city" type="text" autocomplete="address-level2" />
+              </div>
+              <div class="field">
+                <label for="service">Project type</label>
+                <select id="service" name="service" required>
+                  <option value="">Select one</option>
+                  <option value="Residential roof replacement">Residential roof replacement</option>
+                  <option value="Storm damage response">Storm damage response</option>
+                  <option value="Commercial roofing support">Commercial roofing support</option>
+                  <option value="Metal roofing details">Metal roofing details</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field field--full">
+              <label for="message">Project details</label>
+              <textarea id="message" name="message" placeholder="Tell us what you need reviewed."></textarea>
+            </div>
+
+            <div class="field honeypot">
+              <label for="company">Company</label>
+              <input id="company" name="company" type="text" tabindex="-1" autocomplete="off" />
+            </div>
+
+            <label class="checkbox">
+              <input type="checkbox" name="consent" required />
+              <span>I understand this form is for project follow-up by Texas Superior Roofing.</span>
+            </label>
+
+            <button class="button" type="submit">Send request</button>
+            <p class="form-status" data-form-status hidden></p>
+          </form>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <section>
+        <h2>Texas Superior Roofing</h2>
+        <p>Arlington-based roofing contractor serving the DFW Metroplex with a truthful contact flow.</p>
+      </section>
+      <section>
+        <h3>Pages</h3>
+        <ul class="footer-list">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/gallery.html">Gallery</a></li>
+          <li><a href="/about.html">About</a></li>
+        </ul>
+      </section>
+      <section>
+        <h3>Contact</h3>
+        <ul class="footer-list">
+          <li><a data-bind-href="phoneHref" data-bind="phoneDisplay" href="tel:+12142324450"></a></li>
+          <li><span data-bind="locality"></span>, <span data-bind="region"></span> <span data-bind="postalCode"></span></li>
+          <li><a data-bind-href="bbbUrl" href="https://www.bbb.org/" rel="noreferrer" target="_blank">BBB business profile</a></li>
+        </ul>
+      </section>
+    </div>
+    <div class="container footer__meta">
+      <p>© <span data-current-year></span> Texas Superior Roofing. <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></p>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/scripts/main.js"></script>
+</body>
+</html>

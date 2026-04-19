@@ -1,0 +1,6 @@
+[build]
+  command = "export VITE_SITE_URL=${DEPLOY_PRIME_URL:-$URL} && npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
